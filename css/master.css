@@ -1,0 +1,98 @@
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'kanit', sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  list-style: none;
+  background-color: white;
+  margin: 0 15px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 9px 0;
+}
+li {
+  list-style: none;
+  display: inline-block;
+}
+li a:hover {
+  box-shadow: 2px 2px grey;
+}
+li a:active{
+  color: grey;
+  background-color: azure;
+}
+
+.page {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+#one {
+  background-color: lightgreen;
+}
+#two {
+  background-color: lightblue;
+}
+#three {
+  background-color: lightpink;
+}
+
+.container {
+  height: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.image {
+  width: 100%;
+  height: 70%;
+  line-height: 50px;
+}
+.text {
+  width: 100%;
+  height: 30%;
+  font-size: 8vh;
+  color: white;
+  bottom: 100px;
+  left: 10%;
+}
+
+.text_price {
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  height: 50px;
+  width: 50px;
+  bottom: 20%;
+  left: 60%
+  color: white;
+}
+
+.page:hover .text_price {
+visibility: visible;
+}
